@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="a"></h1>
+    <h1 class="b"></h1>
+    <h1 class="c">Hi</h1>
+    <button onclick="fun()">click</button>
+    <script>
+        document.getElementById("a").innerHTML="Mounika";
+        document.querySelector(".b").innerHTML="Web Designing";
+        function fun(){
+            document.querySelector(".c").style.color="red";
+        }
+        let d1 = 10;
+        document.writeln(d1);
+        document.writeln(typeof(d1)+"<br>");
+
+        let d2 = 10.90;
+        document.writeln(d2);
+        document.writeln(typeof(d2)+"<br>");
+
+        let d3 = "Mounika";
+        document.writeln(d3);
+        document.writeln(typeof(d3)+"<br>");
+    </script>
+</body>
+</html>
