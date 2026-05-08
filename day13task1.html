@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1  id="user"></h1>
+      <h1 id="number"></h1>
+       <h1 id="vote"></h1>
+</body>
+<script>
+    //console output
+    var n = 20;
+    var z = (n%2==0) ? "even" : "odd";
+    console.log(z);
+
+    //1.if-else
+    var name = prompt('Please Enter Your Name');
+    if(name==""){
+        document.getElementById("user").innerHTML="HI🐱 , Please Refresh the Page and Enter Your name 📜";
+    }
+    else{
+        document.getElementById("user").innerHTML="HI🐱"+name+" Welcome to my page 📜";
+    }
+
+    //2.else if
+    var y = prompt('Please Enter a Number');
+    if(y>0){
+        document.getElementById("number").innerHTML="Positive Number";
+    }
+    else if(y==0){
+        document.getElementById("number").innerHTML="ZERO";
+    }
+    else if(y<0){
+        document.getElementById("number").innerHTML="Negative Number";
+    }
+    else{
+        document.getElementById("number").innerHTML="Invalid Data";
+    }
+
+    //nested if
+    var age = prompt("Enter Your Age :");
+    if(age>=18){
+        var voterId = prompt("Enter Did you have Voter Id (yes / no)");
+        if(voterId=="yes"){
+            document.getElementById("vote").innerHTML="Eligible To Vote !!";
+        }
+        else{
+            document.getElementById("vote").innerHTML="Not Eligible To Vote !!, Because You Don't have voter Id";
+        }
+    }
+    else{
+            document.getElementById("vote").innerHTML="Not Eligible To Vote !!, Because Your Age is below 18...!";
+    }
+</script>
+</html>
