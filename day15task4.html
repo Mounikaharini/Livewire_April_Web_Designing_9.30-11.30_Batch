@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="demo"></h1>
+    <script>
+        var college = {
+            "name": "lakshmi",
+            "place": "kerala",
+            "color": "blue",
+            "age": 20
+        };
+        document.write(college["name"]);
+        document.write(college.age);
+        //convert json into stringfy
+        var z = JSON.stringify(college);
+        //print
+        document.write(z);
+
+
+        var college = new Map([
+            ["lakshmi", 90],
+            ["bhavani", 95],
+            ["eisha", 85],
+            ["eisha", 0],
+            ["reshma", 89]
+        ]);
+        college.set("mounika",20);
+        document.getElementById("demo").innerHTML = college.get("mounika");
+
+
+    </script>
+</body>
+
+</html>
