@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="x1"></h1>
+    <h1 id="x2"></h1>
+    <h1 id="x3"></h1>
+    <h1 id="demo"></h1>
+    <h1 id="demo1"></h1>
+</body>
+<script>
+    // function add(){
+    //     var a = 10;
+    //     var b = 20;
+    //     return a+b;
+    // }
+    // document.getElementById("x1").innerHTML=add();
+
+
+    // function add1(a,b){
+    //     return a+b;
+    // }
+    // a=parseInt(prompt("Enter the value for A:"));
+    // b=parseInt(prompt("Enter the value for B:"));
+    // document.getElementById("x2").innerHTML=add1(a,b);
+
+    // function check(a,b){
+    //     if(a>b){
+    //         return 'A is greater';
+    //     }
+    //     else if(b>a){
+    //         return "B is greater"
+    //     }
+    //     return "Equal";
+    // }
+    // a=parseInt(prompt("Enter the value for A:"));
+    // b=parseInt(prompt("Enter the value for B:"));
+    // document.getElementById("x3").innerHTML=check(a,b);
+
+    // function reshma() {
+    //     document.getElementById("demo").innerHTML = "Reshma is good in Full Stack Developmet";
+    // }
+    // function bhavani(z) {
+    //     document.getElementById("demo1").innerHTML = z;
+    // }
+    // setTimeout(reshma, 9000);
+    // bhavani("bhavani is good in python");
+
+    // function reshma(z) {
+    //     z = z * z;
+    //     return z;
+    // }
+    // var a = reshma(5);
+    // document.getElementById("demo").innerHTML = a;
+
+
+
+    let bhavani = {
+        role: "trainer",
+        age: 40
+    };
+    function reshma(obj) {
+        obj.age += 1;
+    }
+    reshma(bhavani);
+    document.getElementById("demo").innerHTML = bhavani;
+
+
+
+</script>
+
+</html>
