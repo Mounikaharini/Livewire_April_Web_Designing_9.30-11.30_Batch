@@ -1,0 +1,59 @@
+<!DOCTYPEhtml>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content=" width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <!-- <button id="a">Click</button>
+        <script>
+            document.getElementById("a").addEventListener("click", m);
+            function m() {
+                document.write("hi");
+            }
+        </script> -->
+
+
+        <!-- <button id="a">Click</button>
+        <script>
+            document.getElementById("a").addEventListener("click", m);
+            document.getElementById("a").addEventListener("click", n);
+            function m() {
+                alert("hello");
+            }
+            function n() {
+                document.write("hi");
+            }
+        </script> -->
+
+
+        <!-- <p id="a">hi</p>
+        <script>
+            window.addEventListener("resize",
+                function () {
+                    document.getElementById("a").innerHTML = Math.random();
+                });
+        </script> -->
+
+        <button id="a">Click</button>
+            <p id="b"></p>
+            <script>
+                let v = 3;
+                let y = 2;
+                document.getElementById('a').addEventListener("click", m);
+                function m() {
+                    n(v, y);
+                }
+                function n(w, x) {
+                    document.getElementById('b').innerHTML = w + x;
+                }
+            </script>
+
+
+
+    </body>
+
+    </html>
