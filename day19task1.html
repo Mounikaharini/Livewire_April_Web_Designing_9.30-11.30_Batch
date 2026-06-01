@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // class Resume{
+        //     a(){
+        //         document.write("hi");
+        //     }
+        // }
+        // const r = new Resume();
+        // r.a();
+
+
+        class Resume {
+            name() {
+                document.write("name");
+
+            }
+            contact() {
+                document.write("mobile number");
+            }
+            objective() {
+                document.write("objective");
+
+            }
+            education() {
+                document.write("education");
+            }
+            skills() {
+                document.write("skills");
+
+            }
+            projects() {
+                document.write("projects");
+            }
+        }
+
+        class r1 extends Resume{
+            certifications(){
+                document.write("certificate");
+            }
+        }
+        const r = new r1(); 
+        r.name();
+        r.contact();
+        r.objective();
+        r.education();
+        r.skills();
+        r.projects();   
+        r.certifications();
+    </script>
+
+</body>
+
+</html>

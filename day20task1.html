@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // const z = ['a', 'b', 'c', 'd'];
+        // const output = z[Symbol.iterator]();
+        // document.write(output);
+        // document.write(JSON.stringify(output.next()));
+        // document.write(JSON.stringify(output.next()));
+        // document.write(JSON.stringify(output.next()));
+        // document.write(JSON.stringify(output.next()));
+        // document.write(JSON.stringify(output.next()));
+        // const z = ['a', 'b', 'c', 'd'];
+        // const output = z[Symbol.iterator]()
+        // for (let out of output) {
+        //     document.write(out);
+        // }
+
+        const z = ['a', 'b', 'c', 'd'];
+
+        function * anup() {
+            yield 10;
+            yield * z;
+            yield 30;
+        }
+        for (let output of anup()) {
+            document.write(output);
+        }
+
+    </script>
+</body>
+
+</html>

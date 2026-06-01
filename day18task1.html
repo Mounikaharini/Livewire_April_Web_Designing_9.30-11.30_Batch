@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+   
+    <form onsubmit="fun()">
+        <input type="text" placeholder="Enter Your Name" id="name"><br><br>
+        <input type="text" placeholder="Enter Your Age" id="age"><br>
+    <br><br><input type="submit">
+    </form>
+
+
+    <script>
+        function fun(){
+            var name = document.getElementById("name");
+            var age = document.getElementById("age");
+            if (name==""){
+                alert("Fill The Name");
+            }
+            else if(age<=0){
+                alert("Enter the correct age")
+            }
+            else{
+                alert("form submitted successfully");
+                document.write(name);
+            }
+        }
+
+
+
+
+
+
+        //         var kalai=30;
+        //         var ram=55;
+        //         if(kalai==ram){
+        //             document.writeln("both are wasted");
+        //         }
+        //         else if(kalai>=ram){
+        // document.write("kalai sleeping")
+        //         }
+        //         else if(ram>=kalai){
+        //             document.writeln("mounika harini");
+        //         }
+        //         else{
+        // document.writeln("kartik");
+        //         }
+        // var players = 4;
+        // switch (players) {
+        //     case 1:document.write("kholi"); break;
+        //     case 2: document.writeln("raina"); break;
+        //     case 3: document.writeln("rohit sharma "); break;
+        //     case 4: document.writeln("hardiik pandaya"); break;
+        //     case 5: document.writeln("noor"); break;
+        //     case 6: document.writeln("pollard kalai"); break;
+
+
+        // }
+    </script>
+
+</body>
+
+</html>
