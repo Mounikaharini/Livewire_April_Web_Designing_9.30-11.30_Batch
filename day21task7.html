@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form onsubmit="return validate()">
+        <input type="text" id="un" placeholder="Email address" required>
+        <br><br>
+        <input type="password" id="ps" placeholder="Password" required>
+        <br><br>
+        <button type="submit" id="l">Login</button>
+    </form>
+</body>
+<script>
+    var att = 3;
+
+    function validate() {
+        var un = document.getElementById('un').value;
+        var ps = document.getElementById('ps').value;
+
+        if (un === "mounika@gmail.com" && ps === "1234") {
+            alert("Login successfully");
+            window.location.replace("https://www.youtube.com/watch");
+            return false; // Prevent form submission
+        } else {
+            att--;
+            alert("You have " + att + " attempts left.");
+        }
+
+        if (att === 0) {
+            document.getElementById('un').disabled = true;
+            document.getElementById('ps').disabled = true;
+            document.getElementById('l').disabled = true;
+        }
+
+        return false; // Prevent form submission
+    }
+</script>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    value 1:
+    <input type="text" id="first">
+    <br><br>
+    value 2:
+    <input type="text" id="second">
+    <br><br>
+    <button onclick="ans1()">submit</button>
+    <br><br>
+    Answer:
+    <input type="text" id="vall1"><br><br>
+    Answer:
+    <input type="text" id="vall2">
+    <script>
+        function ans1()
+        {
+            var a, b, c;
+            a = parseInt(document.getElementById("first").value);
+            b = parseInt(document.getElementById("second").value);
+            document.getElementById("vall1").value = a+b;
+            document.getElementById("vall2").value = a-b;
+        }
+    </script>
+</body>
+
+</html>

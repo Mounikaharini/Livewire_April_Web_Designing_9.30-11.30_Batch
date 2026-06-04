@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="posneg">
+        <button onclick="pre()">-</button>
+        <img src=""alt=""id="a" width="200">
+        <button onclick="next()">+</button>
+    </div>
+</body>
+<script>
+    img= ['10001.jpg','10002.jpg','10003.jpeg'];
+    z=0;
+
+    document.getElementById('a').src=img[z];
+
+    function next() {
+        z +=1;
+        if (z >=img.length) {
+            z=0; // Reset to the beginning
+        }
+        document.getElementById('a').src=img[z];
+    }
+
+    function pre() {
+        z -=1;
+        if (z <0) {
+            z=img.length-1; // Wrap around to the last image
+        }
+        document.getElementById('a').src=img[z];
+    }
+</script>
+</html>

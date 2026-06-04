@@ -1,0 +1,29 @@
+<!DOCTYPEhtml>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="forward" onclick="f()">
+    <input type="button" value="back" onclick="b()">
+    <input type="button" value="go" onclick="g()">
+    <a href="/js.html">Youtube</a>
+   
+    <script>
+        function f()
+        {
+            window.history.forward();
+        }
+        function b()
+        {
+            window.history.back();
+        }
+        function g()
+        {
+            window.history.go(2);
+        }
+    </script>
+</body>
+</html>
