@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- <h2>Yoga</h2>
+    <button id="m1">Click me to hide</button>
+   
+    <script>
+        $(document).ready(function () {
+            $("#m1").click(function () {
+                $("h2").hide();
+            });
+        });
+    </script> -->
+
+
+
+    <!-- <p id="id">mounika</p>
+    <button id="m2">Click me to hide</button>
+
+    <script>
+        $(document).ready(function () {
+            $("#m2").click(function () {
+                $("#id").hide();
+            });
+        });
+    </script> -->
+
+
+
+    <!-- <h1 id="h1">Mounika</h1>
+    <button id="id1">Click to change color</button>
+    <script>
+        $(document).ready(function () {
+            $("#id1").click(function () {
+                $("#h1").css("background-color","yellow")
+            });
+        });
+    </script> -->
+
+
+    <!-- <h1 id="content">Text <b>Bold Text</b></h1>
+    <button id="btn1">click html</button>
+    <button id="btn2">click text</button>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                alert("HTML VERSION :"+$("#content").html());
+            });
+            $("#btn2").click(function(){
+                alert("HTML VERSION :"+$("#content").text());
+            });
+        });
+    </script> -->
+
+
+    <style>
+        p {
+            color: rgb(6, 146, 85);
+            margin: 4px;
+        }
+
+        b {
+            color: blue;
+        }
+    </style>
+
+    <p></p><br>
+
+    <select id="single">
+        <option>Single</option>
+        <option>Single2</option>
+    </select>
+    <br><br>
+    <select id="multiple" multiple="multiple">
+        <option selected="selected">Multiple</option>
+        <option>Multiple2</option>
+    </select><br><br>
+
+    <button onclick="displayVals()">Click BROOO !!!</button>
+
+    <script>
+        function displayVals() {
+            var singleValues = $("#single").val();
+            var multipleValues = $("#multiple").val();
+            $("p").html("<b>Single:</b> " + singleValues +
+                " <b>Multiple:</b> " + multipleValues.join(", "));
+        } $("select").on("change", displayVals);
+
+        function displayVals() {
+            var singleValues = $("#single").val();
+            var multipleValues = $("#multiple").val();
+            $("p").html("<b>Single:    </b>" + singleValues + "<br>" +
+                " <b>  Multiple:  </b>   " + multipleValues.join(", "));
+        }
+
+    </script>
+
+
+    <!-- 
+    <input id="check1" type="checkbox">
+    <label for="check1">Check me</label>
+    <p></p>
+    <script>
+        $("input").on("change", function () {
+            var $input = $(this);
+            $("p").html(".attr( 'checked' ): <b>" + $input.is(":checked") + "</b>");
+        }).trigger("change");
+    </script> -->
+
+
+
+</body>
+
+</html>
