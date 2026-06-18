@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .selected {
+            color: rgb(199, 58, 86);
+            font-size: 40px;
+            font-weight: 900;
+        }
+
+        .selecth1 {
+            color: rgb(29, 134, 134);
+        }
+
+        .blue {
+            color: blueviolet;
+        } */
+        .blue {
+            color: blue;
+        }
+
+        .highlight {
+            background: yellow;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!-- <h1 id="h1">Welcome to our class</h1>
+    <h1>Welcome to our class</h1>
+    <h1>Welcome to our class</h1>
+    <h1>Welcome to our class</h1>
+    <button id="hide">click to hide</button> <br><br>
+    <button id="show">click to show</button> <br><br>
+    <button id="color">click to change color</button> <br><br>
+    <button id="bgcolor">click to change bg-color</button> <br><br>
+    <button id="overall">click to change Overall</button> <br><br>
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("h1").hide();
+            });
+            $("#show").click(function(){
+                $("h1").show();
+            });
+            $("#color").click(function(){
+                $("h1").css("color","blue");
+            });
+            $("#bgcolor").click(function(){
+                $("#h1").css("background-color","wheat");
+            });
+            $("#overall").click(function(){
+                $("*").css("background-color","wheat");
+                $("h1").css("color","blue");
+            });
+        });
+    </script> -->
+
+
+    <!-- <h1 id="content">This is Day 40 <sup>th</sup> Class</h1>
+    <button id="text">click for text content</button>
+    <button id="html">click for html content</button>
+    <script>
+        $(document).ready(function(){
+            $("#text").click(function(){
+                alert($("#content").text());
+            });
+            $("#html").click(function(){
+                alert($("#content").html());
+            });
+        });
+    </script> -->
+
+
+    <!-- <h1>Choose the course</h1><br>
+    <p></p><br>
+    <select id="single"> 
+        <option>Python Full Stack</option>
+        <option>Java Full Stack</option>
+        <option>UI/UX</option>
+    </select><br><br>
+    
+
+    <button onclick="content()">Click to show the choosed option</button>
+    <script>
+        function content(){
+            var a = $("#single").val();
+            $("p").html(a);
+        }
+    </script> -->
+
+
+    <!-- <input id="check1" type="checkbox">
+    <label for="check1">Check me</label>
+    <p></p>
+    <script>
+        $("input").on("change", function () {
+            var $input = $(this);
+            $("p").html("<i>"+$input.is(":checked") + "</i>");
+        }).trigger("change");
+    </script> -->
+
+
+    <!-- <p>Hello</p>
+    <p>and</p>
+    <p>Goodbye</p>
+    <h1>bye</h1>
+    <script>
+        $("p").addClass("selected");
+        $("h1").addClass("selecth1");
+    </script> -->
+
+
+    <!-- <h1 class="blue">Heading 1</h1>
+    <h2 class="blue">Heading 2</h2>
+    <p class="blue">This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <button>Remove class from elements</button>
+
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("h1, h2, p").removeClass("blue");
+            });
+        });
+    </script> -->
+
+
+    <!-- <p id="a">Hello</p>
+    <p>and</p>
+    <p>Goodbye</p>
+    <h1>Gd eve</h1>
+    <script>
+        $("#a").add("h1").css("border", "2px solid red")
+    </script> -->
+
+
+    <!-- <div id="mydiv" class="foo bar"></div>
+    <p id="result"></p>
+
+    <script>
+        $("#result").append($("#mydiv").hasClass("foo").toString());
+    </script> -->
+
+    <p class="blue">Click to toggle</p>
+    <p class="blue highlight">highlight</p>
+    <p class="blue">on these</p>
+    <p class="blue">paragraphs</p>
+    <script>
+        $("p").on("click", function () {
+            $(this).toggleClass("highlight");
+        });
+    </script>
+
+</body>
+
+</html>
