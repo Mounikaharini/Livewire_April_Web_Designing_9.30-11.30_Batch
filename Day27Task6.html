@@ -1,0 +1,147 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <h1>Hello Yoga</h1>
+
+    <div style="border: 1px solid; padding: 5px; margin: 5px;">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, necessitatibus?</p>
+    </div>
+
+    <div style="border: 1px solid; padding: 5px; margin: 5px">
+        <p>yoga</p>
+        <p>hello</p>
+    </div>
+    <div style="border: 1px solid; padding: 5px; margin: 5px">
+        <p>yoga</p>
+        <p>hello</p>
+    </div>
+    <div style="border: 1px solid; padding: 5px; margin: 5px">
+        <p>yoga</p>
+        <p>hello</p>
+    </div>
+    <div style="border: 1px solid; padding: 5px; margin: 5px">
+        <p>yoga</p>
+        <p>hello</p>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        $("div").eq(2).css("background-color", "yellow");
+    });
+</script>
+
+</html> -->
+
+<!-- <html>
+
+<head>
+    <title>even demo</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+
+<body>
+    <ul>
+        <li>Look:</li>
+        <li>This is some text in a list.</li>
+        <li>This is a note about it.</li>
+        <li>This is another note about it.</li>
+    </ul>
+    <script>
+        $("ul li:nth-child(odd)").addClass("highlight");
+    </script>
+</body>
+
+</html> -->
+
+<!-- <html>
+
+<head>
+    <title>parent demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+
+<body>
+
+    <p>Hello</p>  <div>
+        <p>Hello</p>
+    </div>
+    <div class="selected">
+        <p>Hello Again</p>
+    </div>
+    <script>
+        $("p").parent().css({ "color": "red", "border": "1px solid black", "background-color": "yellow" })
+    </script>
+    <div>
+        <h1>grt</h1>
+    </div>
+    <div>
+        <nav>
+            <ul>
+                <li>hi</li>
+                <li>hi</li>
+                <li>hi</li>
+            </ul>
+        </nav>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("li").parents().css({ "border": "2px solid blue", 'font-size': '30px' });
+        });
+    </script>
+
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script src="jqery.js"></script>
+    <style>
+        .a * {
+            border: 2px solid lightgray;
+            padding: 20px;
+            margin: 15px;
+        }
+    </style>
+</head>
+
+<body class="a">
+    <div>
+        <nav>
+            <ul style="list-style-type: none;">
+                <li>hi</li>
+ 
+            </ul>
+            <ul style="list-style-type: none;">
+                <li>hi</li>
+
+            </ul>
+        </nav>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        $("li").parentsUntil("div").css({ "border": "2px solid blue", 'font-size': '30px' });
+    });
+</script>
+
+</html>

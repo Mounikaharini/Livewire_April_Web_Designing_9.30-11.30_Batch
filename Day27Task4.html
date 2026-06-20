@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <title>event.pageX demo</title>
+    <style></style>
+    <script src="https: //code.jquery.com/jquery-3.7.0.js">
+    </script>
+</head>
+
+<body>
+    <div id="log">
+    </div>
+    <script>
+        $(document).on("mousemove", function (event) {
+            $("#log").text("pageX: " + event.pageX + ", pageY: " + event.pageY);
+        });</script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            display: none;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <p>Hello</p>
+    <!-- <a href="#">Click to hide me too</a> -->
+     <button>click to hide</button>
+    <p>Here is another paragraph</p>
+    <script>
+        $("button").on("click", function () {
+            $("p").toggle();
+        });
+    </script>
+
+</body>
+
+</html>

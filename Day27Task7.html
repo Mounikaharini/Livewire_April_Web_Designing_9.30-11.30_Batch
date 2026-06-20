@@ -1,0 +1,66 @@
+<!-- <html>
+
+<head>
+    <title>children demo</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-weight: bolder;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+
+<body>
+    <div>
+        <span>Hello</span>
+        <p class="selected">Hello Again</p>
+        <div class="selected">And Again </div>
+        <p>And One Last Time</p>
+    </div>
+    <script>
+        $("div").children(".selected").css("color", "blue");
+    </script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script src="jqery.js"></script>
+    <style>
+        .a * {
+            border: 2px solid lightgray;
+            padding: 20px;
+            margin: 15px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+
+<body class="a">
+    <div>
+        <nav>
+            <ul style="list-style-type: none;">
+                <li>mouni</li>
+            </ul>
+        </nav>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        $("div").find("li").css({ "border": "2px solid blue", 'font-size': '30px' });
+    });
+</script>
+
+</html>
